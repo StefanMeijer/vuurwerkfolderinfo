@@ -1,0 +1,25 @@
+* {
+    .navbar-brand {
+        font-family: "Firecracker", Arial, Helvetica, sans-serif;
+        font-size: 5rem;
+        white-space: normal;
+        overflow: hidden;
+        overflow-wrap: break-word;
+        @media screen and (max-width: 520px) {
+            font-size: 3rem;
+        }
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: rgb(255, 255, 255);
+            -moz-text-decoration-color: rgb(255, 255, 255);
+            text-decoration-thickness: 2px;
+            text-underline-position: under;
+            text-underline-offset: 3px;
+        }
+    }
+}
