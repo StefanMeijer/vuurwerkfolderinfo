@@ -7,14 +7,69 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./product-list.component.less']
 })
 export class ProductListComponent implements OnInit {
-  
-    constructor(private route: ActivatedRoute) { }
-  
-    ngOnInit(): void {
-      this.route.paramMap.subscribe(params => {
-        console.log(params.get('folderid'));
-      });
-    }
-  
+  private folderId: any; //String or null
+  private products: Array<any> = [];
 
+
+  constructor(private route: ActivatedRoute) {
+    console.log(this.splitFolderId("aldi2022")); //["aldi", "2022"] Make http request to get the folder information
+    this.products.push({
+      type: "Cake",
+      name: "Elysium",
+      cat: "F2",
+      brand: "Weco",
+      price: "2.99",
+      shots: "16",
+      caliber: "20",
+      weight: "0.3",
+      burningTime: "30",
+      ytUrl: "dJiZ4R5WRIE",
+      image: "https://src.discounto.de/pics/Angebote/2019-12/3373326/5425877_WECO-Multi-Feuertopf-Batterie-Elysium_xxl.jpg"
+    });
+    console.log(this.getProducts());
+  }
+
+  /**
+   * Function to split folderid into two parts
+   * @param folderid String that contains the shop and the year Example: aldi2022
+   * @returns Array with two elements. First element is the shop and the second element is the year
+   */
+  private splitFolderId(folderid: string): Array<string> {
+    let folderId: Array<string> = [];
+
+    var num = folderid.match(/\d+/g); //checkfor numbers
+    var letr = folderid.match(/[a-zA-Z]+/g); //check for letters
+    if (letr != null && num != null) {
+      folderId.push(letr.toString());
+      folderId.push(num.toString());
+    }
+
+    return folderId;
+  }
+
+  /**
+   * Function to get the folderid from the url
+   */
+  ngOnInit(): void {
+    this.route.paramMap.subscribe(params => {
+      this.setFolderId(params.get('folderid'));
+      // console.log(params.get('folderid'));
+    });
+  }
+
+  public getFolderId(): string {
+    return this.folderId;
+  }
+
+  public setFolderId(folderId: any): void {
+    this.folderId = folderId;
+  }
+
+  public getProducts(): Array<any> {
+    return this.products;
+  }
+
+  public setProducts(products: Array<any>): void {
+    this.products = products;
+  }
 }

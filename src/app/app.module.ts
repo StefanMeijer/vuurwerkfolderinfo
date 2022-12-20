@@ -8,13 +8,15 @@ import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './screens/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SafePipe } from './pipes/safe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
