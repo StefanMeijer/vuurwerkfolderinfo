@@ -1,88 +1,52 @@
 <div class="container pt-5">
-    <div id="cakes" class="row row-cols-1 row-cols-sm-2 g-3">
-
-        <div class="col" *ngFor="let product of getProducts(); index as i;">
-            <div class="card">
-                <div class="embed-responsive w-100">
-                    <iframe class="embed-responsive-item w-100 h-100" [src]="'https://www.youtube.com/embed/' + product.ytUrl | safe:'resourceUrl'"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h2 class="card-title fw-bold" *ngIf="product.name">{{ product.name }}</h2>
-                                    <h4 class="card-text fw-bold" *ngIf="product.price">€ {{ product.price }}</h4>
-                                </div>
-                            </div>
-
-                            <div class="row pt-2">
-                                <div class="col-md-12">
-                                    <div class="row" *ngIf="product.cat">
-                                        <div class="col-5">
-                                            <span class="product-info">Cat:</span>
-                                        </div>
-                                        <div class="col-7">
-                                            <span class="product-info-answer">{{ product.cat }}</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="row" *ngIf="product.brand">
-                                        <div class="col-5">
-                                            <span class="product-info">Merk:</span>
-                                        </div>
-                                        <div class="col-7">
-                                            <span class="product-info-answer">{{ product.brand }}</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="row" *ngIf="product.shots">
-                                        <div class="col-5">
-                                            <span class="product-info">Schoten:</span>
-                                        </div>
-                                        <div class="col-7">
-                                            <span class="product-info-answer">{{ product.shots }}</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="row" *ngIf="product.caliber">
-                                        <div class="col-5">
-                                            <span class="product-info">Kaliber:</span>
-                                        </div>
-                                        <div class="col-7">
-                                            <span class="product-info-answer">{{ product.caliber }} mm</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="row" *ngIf="product.weight">
-                                        <div class="col-5">
-                                            <span class="product-info">Gewicht:</span>
-                                        </div>
-                                        <div class="col-7">
-                                            <span class="product-info-answer">{{ product.weight }} kg</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="row" *ngIf="product.burningTime">
-                                        <div class="col-5">
-                                            <span class="product-info">Brandduur:</span>
-                                        </div>
-                                        <div class="col-7">
-                                            <span class="product-info-answer">{{ product.burningTime }} seconden</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5" *ngIf="product.image">
-                            <img class="img-fluid" [src]="product.image | safe:'url'" alt="Product foto">
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- cakes -->
+    <div id="cakes" class="pb-5 row row-cols-1 row-cols-sm-2 g-3" *ngIf="getProducts()[0].cakes.length != 0">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <h1>Cakes</h1>
         </div>
-
+        <div class="col" *ngFor="let product of getProducts()[0].cakes; index as i;">
+            <app-firework-card [product]="[product]"></app-firework-card> <!-- Send product as array -->
+        </div>
     </div>
+
+    <!-- fontains -->
+    <div id="fontains" class="pb-5 row row-cols-1 row-cols-sm-2 g-3" *ngIf="getProducts()[0].fontains.length != 0">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <h1>Fonteinen</h1>
+        </div>
+        <div class="col" *ngFor="let product of getProducts()[0].fontains; index as i;">
+            <app-firework-card [product]="[product]"></app-firework-card> <!-- Send product as array -->
+        </div>
+    </div>
+
+    <!-- bang -->
+    <div id="rockets" class="pb-5 row row-cols-1 row-cols-sm-2 g-3" *ngIf="getProducts()[0].bang.length != 0">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <h1>Knal</h1>
+        </div>
+        <div class="col" *ngFor="let product of getProducts()[0].bang; index as i;">
+            <app-firework-card [product]="[product]"></app-firework-card> <!-- Send product as array -->
+        </div>
+    </div>
+
+    <!-- rockets -->
+    <div id="rockets" class="pb-5 row row-cols-1 row-cols-sm-2 g-3" *ngIf="getProducts()[0].rockets.length != 0">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <h1>Vuurpijlen</h1>
+        </div>
+        <div class="col" *ngFor="let product of getProducts()[0].rockets; index as i;">
+            <app-firework-card [product]="[product]"></app-firework-card> <!-- Send product as array -->
+        </div>
+    </div>
+
+    <!-- package -->
+    <div id="rockets" class="pb-5 row row-cols-1 row-cols-sm-2 g-3" *ngIf="getProducts()[0].package.length != 0">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <h1>Pakketten</h1>
+        </div>
+        <div class="col" *ngFor="let product of getProducts()[0].package; index as i;">
+            <app-firework-card [product]="[product]"></app-firework-card> <!-- Send product as array -->
+        </div>
+    </div>
+
 </div>

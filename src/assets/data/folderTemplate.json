@@ -1,0 +1,33 @@
+{
+    "cakes": [
+        {
+            "type": "",
+            "name": "",
+            "cat": "",
+            "brand": "",
+            "price": "",
+            "shots": "",
+            "caliber": "",
+            "weight": "",
+            "burningTime": "",
+            "ytUrl": "",
+            "image": ""
+          }
+    ],
+  
+    "fontains": {
+  
+    },
+  
+    "bang": [
+  
+    ],
+  
+    "rockets": [
+  
+    ],
+  
+    "package": [
+  
+    ]
+  }

@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './screens/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SafePipe } from './pipes/safe.pipe';
+import { FireworkCardComponent } from './components/firework-card/firework-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SafePipe } from './pipes/safe.pipe';
     ProductListComponent,
     NavbarComponent,
     HomeComponent,
-    SafePipe
+    SafePipe,
+    FireworkCardComponent
   ],
   imports: [
     BrowserModule,

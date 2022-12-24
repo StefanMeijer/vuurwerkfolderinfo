@@ -1,0 +1,59 @@
+{
+  "cakes": [
+    {
+      "type": "Cake",
+      "name": "Artus",
+      "cat": "F2",
+      "brand": "Weco",
+      "price": "2.99",
+      "shots": "10",
+      "caliber": "18",
+      "weight": "N/A",
+      "burningTime": "15",
+      "ytUrl": "IQA18G3pf6k",
+      "image": "https://i0.wp.com/www.tmccraft.com/wp-content/uploads/2022/11/artus-1.jpg?w=568&ssl=1"
+    },
+    {
+      "type": "Cake",
+      "name": "Eruption",
+      "cat": "F2",
+      "brand": "Weco",
+      "price": "2.49",
+      "shots": "16",
+      "caliber": "14",
+      "weight": "N/A",
+      "burningTime": "20",
+      "ytUrl": "dJiZ4R5WRIE",
+      "image": "https://i0.wp.com/www.tmccraft.com/wp-content/uploads/2022/12/eruption-scaled.jpg?resize=1024%2C967&ssl=1"
+    },
+    {
+      "type": "Cake",
+      "name": "Poison",
+      "cat": "F2",
+      "brand": "Weco",
+      "price": "3.99",
+      "shots": "16",
+      "caliber": "19",
+      "weight": "N/A",
+      "burningTime": "35",
+      "ytUrl": "aTMqq1BnKxs",
+      "image": "https://i0.wp.com/www.tmccraft.com/wp-content/uploads/2022/11/poison.jpg?w=497&ssl=1"
+    }
+  ],
+
+  "fontains": [
+
+  ],
+
+  "bang": [
+
+  ],
+
+  "rockets": [
+
+  ],
+
+  "package": [
+
+  ]
+}

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+var json = require('../../../assets/data/aldi2022.json');
+
 
 @Component({
   selector: 'app-product-list',
@@ -8,31 +10,24 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProductListComponent implements OnInit {
   private folderId: any; //String or null
-  private products: Array<any> = [];
-
+  private products: Array<any>;
 
   constructor(private route: ActivatedRoute) {
+    this.products = [];
     console.log(this.splitFolderId("aldi2022")); //["aldi", "2022"] Make http request to get the folder information
-    this.products.push({
-      type: "Cake",
-      name: "Elysium",
-      cat: "F2",
-      brand: "Weco",
-      price: "2.99",
-      shots: "16",
-      caliber: "20",
-      weight: "0.3",
-      burningTime: "30",
-      ytUrl: "dJiZ4R5WRIE",
-      image: "https://src.discounto.de/pics/Angebote/2019-12/3373326/5425877_WECO-Multi-Feuertopf-Batterie-Elysium_xxl.jpg"
-    });
+    // console.log(json);
+
+    this.setProducts([json]);
+
+    // this.products.push(json.products);
+
     console.log(this.getProducts());
   }
 
   /**
    * Function to split folderid into two parts
    * @param folderid String that contains the shop and the year Example: aldi2022
-   * @returns Array with two elements. First element is the shop and the second element is the year
+   * @returns Array with two elements. First element is the shop and the second element is the year Example: aldi, 2022
    */
   private splitFolderId(folderid: string): Array<string> {
     let folderId: Array<string> = [];
