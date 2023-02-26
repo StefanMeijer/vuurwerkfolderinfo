@@ -1,8 +1,12 @@
 <div class="card" *ngFor="let product of getProduct(); index as i">
     <div class="embed-responsive w-100">
-        <iframe class="embed-responsive-item w-100 h-100"
+        <iframe *ngIf="product.ytUrl" class="embed-responsive-item w-100 h-100"
             [src]="'https://www.youtube.com/embed/' + product.ytUrl | safe:'resourceUrl'" allowfullscreen>
         </iframe>
+
+        <div *ngIf="!product.ytUrl" class="d-grid align-items-center text-center not-found">
+            <h5>Geen video beschikbaar</h5>
+        </div>
     </div>
     <div class="card-body">
         <div class="row">
@@ -52,12 +56,30 @@
                             </div>
                         </div>
 
-                        <div class="row" *ngIf="product.weight">
+                        <div class="row" *ngIf="product.effectHeight">
                             <div class="col-5">
-                                <span class="product-info">Gewicht:</span>
+                                <span class="product-info">Effect hoogte:</span>
                             </div>
                             <div class="col-7">
-                                <span class="product-info-answer">{{ product.weight }} kg</span>
+                                <span class="product-info-answer">{{ product.effectHeight }} m</span>
+                            </div>
+                        </div>
+
+                        <div class="row" *ngIf="product.powderWeight">
+                            <div class="col-5">
+                                <span class="product-info">Kruitgewicht:</span>
+                            </div>
+                            <div class="col-7">
+                                <span class="product-info-answer">{{ product.powderWeight }} kg</span>
+                            </div>
+                        </div>
+
+                        <div class="row" *ngIf="product.grossWeight">
+                            <div class="col-5">
+                                <span class="product-info">Bruto gewicht:</span>
+                            </div>
+                            <div class="col-7">
+                                <span class="product-info-answer">{{ product.grossWeight }} kg</span>
                             </div>
                         </div>
 
@@ -69,10 +91,16 @@
                                 <span class="product-info-answer">{{ product.burningTime }} seconden</span>
                             </div>
                         </div>
+
+                        <div class="row pt-2" *ngIf="product.description">
+                            <div class="col-12">
+                                <span class="text-danger">{{ product.description }}</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-5" *ngIf="product.image">
+            <div class="col-md-5 d-flex align-items-center justify-content-center" *ngIf="product.image">
                 <img class="img-fluid" [src]="product.image | safe:'url'" alt="Product foto">
             </div>
         </div>

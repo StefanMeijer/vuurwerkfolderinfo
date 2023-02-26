@@ -1,4 +1,21 @@
 <div class="container pt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-capitalize">{{ splitFolderId(getFolderId()) }}</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 d-grid gap-3 d-sm-block">
+            <a *ngIf="getProducts()[0].cakes.length     != 0" class="btn btn-secondary p-2 me-sm-2" href="{{getHref()}}#cakes"      role="button">Cakes</a>
+            <a *ngIf="getProducts()[0].fontains.length  != 0" class="btn btn-secondary p-2 me-sm-2" href="{{getHref()}}#fontains"   role="button">Fonteinen</a>
+            <a *ngIf="getProducts()[0].bang.length      != 0" class="btn btn-secondary p-2 me-sm-2" href="{{getHref()}}#bang"       role="button">Knal</a>
+            <a *ngIf="getProducts()[0].rockets.length   != 0" class="btn btn-secondary p-2 me-sm-2" href="{{getHref()}}#rockets"    role="button">Vuurpijlen</a>
+            <a *ngIf="getProducts()[0].package.length   != 0" class="btn btn-secondary p-2"         href="{{getHref()}}#package"    role="button">Pakketten</a>
+        </div>
+    </div>
+
+    <hr>
     <!-- cakes -->
     <div id="cakes" class="pb-5 row row-cols-1 row-cols-sm-2 g-3" *ngIf="getProducts()[0].cakes.length != 0">
         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -20,7 +37,7 @@
     </div>
 
     <!-- bang -->
-    <div id="rockets" class="pb-5 row row-cols-1 row-cols-sm-2 g-3" *ngIf="getProducts()[0].bang.length != 0">
+    <div id="bang" class="pb-5 row row-cols-1 row-cols-sm-2 g-3" *ngIf="getProducts()[0].bang.length != 0">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <h1>Knal</h1>
         </div>
@@ -40,7 +57,7 @@
     </div>
 
     <!-- package -->
-    <div id="rockets" class="pb-5 row row-cols-1 row-cols-sm-2 g-3" *ngIf="getProducts()[0].package.length != 0">
+    <div id="package" class="pb-5 row row-cols-1 row-cols-sm-2 g-3" *ngIf="getProducts()[0].package.length != 0">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <h1>Pakketten</h1>
         </div>
@@ -48,5 +65,4 @@
             <app-firework-card [product]="[product]"></app-firework-card> <!-- Send product as array -->
         </div>
     </div>
-
 </div>

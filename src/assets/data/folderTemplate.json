@@ -8,10 +8,13 @@
             "price": "",
             "shots": "",
             "caliber": "",
-            "weight": "",
+            "effectHeight": "",
+            "powderWeight": "",
+            "grossWeight": "",
             "burningTime": "",
             "ytUrl": "",
-            "image": ""
+            "image": "",
+            "description": ""
           }
     ],
   
@@ -29,5 +32,9 @@
   
     "package": [
   
-    ]
+    ],
+
+    "folderInfo": {
+      "link": ""
+    }
   }

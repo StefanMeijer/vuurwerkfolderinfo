@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 var json = require('../../../assets/data/aldi2022.json');
 
 
@@ -11,9 +11,11 @@ var json = require('../../../assets/data/aldi2022.json');
 export class ProductListComponent implements OnInit {
   private folderId: any; //String or null
   private products: Array<any>;
+  private href: string;
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private router: Router) {
     this.products = [];
+    this.href = this.router.url;
     console.log(this.splitFolderId("aldi2022")); //["aldi", "2022"] Make http request to get the folder information
     // console.log(json);
 
@@ -21,7 +23,7 @@ export class ProductListComponent implements OnInit {
 
     // this.products.push(json.products);
 
-    console.log(this.getProducts());
+    // console.log(this.getProducts());
   }
 
   /**
@@ -29,7 +31,7 @@ export class ProductListComponent implements OnInit {
    * @param folderid String that contains the shop and the year Example: aldi2022
    * @returns Array with two elements. First element is the shop and the second element is the year Example: aldi, 2022
    */
-  private splitFolderId(folderid: string): Array<string> {
+  public splitFolderId(folderid: string): Array<string> {
     let folderId: Array<string> = [];
 
     var num = folderid.match(/\d+/g); //checkfor numbers
@@ -66,5 +68,13 @@ export class ProductListComponent implements OnInit {
 
   public setProducts(products: Array<any>): void {
     this.products = products;
+  }
+
+  public getHref(): string {
+    return this.href;
+  }
+
+  public setHref(href: string): void {
+    this.href = href;
   }
 }
