@@ -1,37 +1,93 @@
 {
     "cakes": [
-        {
-            "type": "",
-            "name": "",
-            "cat": "",
-            "brand": "",
-            "price": "",
-            "shots": "",
-            "caliber": "",
-            "effectHeight": "",
-            "powderWeight": "",
-            "grossWeight": "",
-            "burningTime": "",
-            "ytUrl": "",
-            "image": "",
-            "description": ""
-          }
+      {
+        "type": "Cake",
+        "name": "",
+        "cat": "",
+        "brand": "",
+        "price": "",
+        "shots": "",
+        "caliber": "",
+        "effectHeight": "",
+        "powderWeight": "",
+        "grossWeight": "",
+        "burningTime": "",
+        "ytUrl": "",
+        "image": "",
+        "description": ""
+      }
     ],
   
     "fontains": [
-  
+      {
+        "type": "Fontain",
+        "name": "",
+        "cat": "",
+        "brand": "",
+        "price": "",
+        "shots": "",
+        "caliber": "",
+        "powderWeight": "",
+        "grossWeight": "",
+        "burningTime": "",
+        "ytUrl": "",
+        "image": "",
+        "description": ""
+      }
     ],
   
     "bang": [
-  
+      {
+        "type": "Bang",
+        "name": "",
+        "cat": "",
+        "brand": "",
+        "price": "",
+        "shots": "",
+        "caliber": "",
+        "powderWeight": "",
+        "grossWeight": "",
+        "burningTime": "",
+        "ytUrl": "",
+        "image": "",
+        "description": ""
+      }
     ],
   
     "rockets": [
-  
+      {
+        "type": "Rocket",
+        "name": "",
+        "cat": "",
+        "brand": "",
+        "price": "",
+        "shots": "",
+        "caliber": "",
+        "powderWeight": "",
+        "grossWeight": "",
+        "burningTime": "",
+        "ytUrl": "",
+        "image": "",
+        "description": ""
+      }
     ],
   
     "package": [
-  
+      {
+        "type": "Package",
+        "name": "",
+        "cat": "",
+        "brand": "",
+        "price": "",
+        "shots": "",
+        "caliber": "",
+        "powderWeight": "",
+        "grossWeight": "",
+        "burningTime": "",
+        "ytUrl": "",
+        "image": "",
+        "description": ""
+      }
     ],
 
     "folderInfo": {

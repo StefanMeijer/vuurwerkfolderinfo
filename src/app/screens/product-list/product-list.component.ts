@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-product-list',
@@ -13,7 +14,7 @@ export class ProductListComponent implements OnInit {
   private href: string;
   public dataLoaded: boolean = false;
 
-  constructor(private route: ActivatedRoute, private router: Router, private http: HttpClient) {
+  constructor(private route: ActivatedRoute, private router: Router, private http: HttpClient, private meta: Meta) {
     this.products = [];
     this.href = this.router.url;
   }
@@ -50,6 +51,8 @@ export class ProductListComponent implements OnInit {
             // console.error('Er is een fout opgetreden bij het laden van de gegevens:', error);
         }
     );
+
+    this.meta.updateTag({ name: 'description', content: 'Vuurwerk folder ' + this.splitFolderId(this.getFolderId()) });
 }
 
   public getFolderId(): string {
