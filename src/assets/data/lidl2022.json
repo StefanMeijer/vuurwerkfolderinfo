@@ -1,0 +1,35 @@
+{
+  "cakes": [
+      {
+          "type": "",
+          "name": "",
+          "cat": "",
+          "brand": "",
+          "price": "",
+          "shots": "",
+          "caliber": "",
+          "effectHeight": "",
+          "powderWeight": "",
+          "grossWeight": "",
+          "burningTime": "",
+          "ytUrl": "",
+          "image": "",
+          "description": ""
+        }
+  ],
+  "fontains": [
+
+  ],
+  "bang": [
+
+  ],
+  "rockets": [
+
+  ],
+  "package": [
+
+  ],
+  "folderInfo": {
+    "link": ""
+  }
+}

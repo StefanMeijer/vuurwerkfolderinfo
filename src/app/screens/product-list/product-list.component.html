@@ -1,4 +1,4 @@
-<div class="container pt-5">
+<div class="container pt-5"  *ngIf="dataLoaded">
     <div class="row">
         <div class="col-md-12">
             <h1 class="text-capitalize">{{ splitFolderId(getFolderId()) }}</h1>
@@ -7,12 +7,12 @@
 
     <div class="row">
         <div class="col-12 d-grid gap-3 d-sm-block">
-            <a *ngIf="getProducts()[0].cakes.length     != 0" class="btn btn-secondary p-2 me-sm-2" href="{{getHref()}}#cakes"      role="button">Cakes</a>
-            <a *ngIf="getProducts()[0].fontains.length  != 0" class="btn btn-secondary p-2 me-sm-2" href="{{getHref()}}#fontains"   role="button">Fonteinen</a>
-            <a *ngIf="getProducts()[0].bang.length      != 0" class="btn btn-secondary p-2 me-sm-2" href="{{getHref()}}#bang"       role="button">Knal</a>
-            <a *ngIf="getProducts()[0].rockets.length   != 0" class="btn btn-secondary p-2 me-sm-2" href="{{getHref()}}#rockets"    role="button">Vuurpijlen</a>
-            <a *ngIf="getProducts()[0].package.length   != 0" class="btn btn-secondary p-2"         href="{{getHref()}}#package"    role="button">Pakketten</a>
-        </div>
+            <a *ngIf="getProducts()[0]?.cakes?.length     !== 0" class="btn btn-secondary p-2 me-sm-2" href="{{getHref()}}#cakes"   role="button">Cakes</a>
+            <a *ngIf="getProducts()[0]?.fontains?.length  !== 0" class="btn btn-secondary p-2 me-sm-2" href="{{getHref()}}#fontains"   role="button">Fonteinen</a>
+            <a *ngIf="getProducts()[0]?.bang?.length      !== 0" class="btn btn-secondary p-2 me-sm-2" href="{{getHref()}}#bang"       role="button">Knal</a>
+            <a *ngIf="getProducts()[0]?.rockets?.length   !== 0" class="btn btn-secondary p-2 me-sm-2" href="{{getHref()}}#rockets"    role="button">Vuurpijlen</a>
+            <a *ngIf="getProducts()[0]?.package?.length   !== 0" class="btn btn-secondary p-2"         href="{{getHref()}}#package"    role="button">Pakketten</a>
+        </div>        
     </div>
 
     <hr>
@@ -63,6 +63,14 @@
         </div>
         <div class="col" *ngFor="let product of getProducts()[0].package; index as i;">
             <app-firework-card [product]="[product]"></app-firework-card> <!-- Send product as array -->
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" *ngIf="!dataLoaded">
+    <div id="headline" class="row align-items-center text-center">
+        <div class="col-md-12">
+            <h1>Geen vuurwerk gevonden voor: {{ splitFolderId(getFolderId()) }}</h1>
         </div>
     </div>
 </div>

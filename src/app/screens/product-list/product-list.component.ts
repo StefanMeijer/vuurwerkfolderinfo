@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-var json = require('../../../assets/data/aldi2022.json');
-
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-product-list',
@@ -12,18 +11,11 @@ export class ProductListComponent implements OnInit {
   private folderId: any; //String or null
   private products: Array<any>;
   private href: string;
+  public dataLoaded: boolean = false;
 
-  constructor(private route: ActivatedRoute, private router: Router) {
+  constructor(private route: ActivatedRoute, private router: Router, private http: HttpClient) {
     this.products = [];
     this.href = this.router.url;
-    console.log(this.splitFolderId("aldi2022")); //["aldi", "2022"] Make http request to get the folder information
-    // console.log(json);
-
-    this.setProducts([json]);
-
-    // this.products.push(json.products);
-
-    // console.log(this.getProducts());
   }
 
   /**
@@ -38,21 +30,27 @@ export class ProductListComponent implements OnInit {
     var letr = folderid.match(/[a-zA-Z]+/g); //check for letters
     if (letr != null && num != null) {
       folderId.push(letr.toString());
-      folderId.push(num.toString());
+      folderId.push(" " + num.toString());
     }
 
     return folderId;
   }
 
-  /**
-   * Function to get the folderid from the url
-   */
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
-      this.setFolderId(params.get('folderid'));
-      // console.log(params.get('folderid'));
+        this.setFolderId(params.get('folderid'));
     });
-  }
+
+    this.http.get('../../../assets/data/' + this.getFolderId() + '.json').subscribe(
+        (data: any) => {
+            this.setProducts([data]);
+            this.dataLoaded = true;
+        },
+        (error) => {
+            // console.error('Er is een fout opgetreden bij het laden van de gegevens:', error);
+        }
+    );
+}
 
   public getFolderId(): string {
     return this.folderId;

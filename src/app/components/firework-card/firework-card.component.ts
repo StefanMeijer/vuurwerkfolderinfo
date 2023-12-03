@@ -16,7 +16,6 @@ export class FireworkCardComponent {
   }
 
   public getProduct(): Array<any> {
-    // console.log(this.product);
     return this.product;
   }
 

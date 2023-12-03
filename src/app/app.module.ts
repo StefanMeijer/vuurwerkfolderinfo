@@ -10,6 +10,7 @@ import { HomeComponent } from './screens/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SafePipe } from './pipes/safe.pipe';
 import { FireworkCardComponent } from './components/firework-card/firework-card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,11 +24,12 @@ import { FireworkCardComponent } from './components/firework-card/firework-card.
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {path: '', component: HomeComponent}, // Default route
-      // {path: '**', redirectTo: '', pathMatch: 'full'}, // Wildcard route for a 404 page
       {path: 'home', component: HomeComponent},
-      {path: 'productlist/:folderid', component: ProductListComponent}
+      {path: 'productlist/:folderid', component: ProductListComponent},
+      {path: '**', redirectTo: '', pathMatch: 'full'} // Wildcard route for a 404 page
     ]),
     NgbModule
   ],
