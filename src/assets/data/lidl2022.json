@@ -13,7 +13,7 @@
           "grossWeight": "0.330",
           "burningTime": "20",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/elysium.jpg",
           "description": ""
         },
         {
@@ -29,7 +29,7 @@
           "grossWeight": "0.412",
           "burningTime": "20",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/discovery.jpg",
           "description": "Discovery, ook wel bekend als Gravity"
         },
         {
@@ -45,7 +45,7 @@
           "grossWeight": "0.680",
           "burningTime": "25",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/aligator.jpg",
           "description": ""
         },
         {
@@ -61,7 +61,7 @@
           "grossWeight": "0.910",
           "burningTime": "25",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/hellboy.jpg",
           "description": "Hellboy, ook wel bekend als Daft Dog"
         },
         {
@@ -77,7 +77,7 @@
           "grossWeight": "0.830",
           "burningTime": "50",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/powerbox.jpg",
           "description": "Power Box, ook wel bekend als Rock'n Roll"
         },
         {
@@ -93,7 +93,7 @@
           "grossWeight": "0.915",
           "burningTime": "30",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/matrix.jpg",
           "description": "Matrix, ook wel bekend als Starlet"
         },
         {
@@ -109,7 +109,7 @@
           "grossWeight": "1.240",
           "burningTime": "45",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/uranus.jpg",
           "description": ""
         },
         {
@@ -125,7 +125,7 @@
           "grossWeight": "1.120",
           "burningTime": "120",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/oceanoflights.jpg",
           "description": ""
         },
         {
@@ -141,7 +141,7 @@
           "grossWeight": "1.200",
           "burningTime": "35",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/wildstorm.jpg",
           "description": "Wild Storm, ook wel bekend als Rotator"
         },
         {
@@ -157,7 +157,7 @@
           "grossWeight": "1.230",
           "burningTime": "50",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/firefighter.jpg",
           "description": "Fire Fighter, ook wel bekend als Kopernikus"
         },
         {
@@ -173,7 +173,7 @@
           "grossWeight": "1.670",
           "burningTime": "25",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/stormyflash.jpg",
           "description": ""
         },
         {
@@ -189,7 +189,7 @@
           "grossWeight": "1.950",
           "burningTime": "30",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/raptor.webp",
           "description": ""
         },
         {
@@ -205,7 +205,7 @@
           "grossWeight": "2.560",
           "burningTime": "37",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/beastmaster.webp",
           "description": "Beastmaster, ook wel bekend als Hardliner"
         },
         {
@@ -221,7 +221,7 @@
           "grossWeight": "2.180",
           "burningTime": "50",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/celebration.jpg",
           "description": ""
         },
         {
@@ -237,7 +237,7 @@
           "grossWeight": "2.750",
           "burningTime": "35",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/daredevil.jpg",
           "description": "Daredevil, ook wel bekend als Starfall"
         },
         {
@@ -253,7 +253,7 @@
           "grossWeight": "2.560",
           "burningTime": "35",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/bigsuprise.png",
           "description": "Big Suprise, ook wel bekend als Slender Man"
         },
         {
@@ -269,7 +269,7 @@
           "grossWeight": "2.380",
           "burningTime": "35",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/firefly.jpg",
           "description": "Firefly, ook wel bekend als Hexagon"
         },
         {
@@ -285,7 +285,7 @@
           "grossWeight": "2.887",
           "burningTime": "55",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/paintedsky.jpg",
           "description": "Firefly, ook wel bekend als Painted Sky"
         },
         {
@@ -301,7 +301,7 @@
           "grossWeight": "3.200",
           "burningTime": "40",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/goldfinger.jpg",
           "description": "Gold Finger, ook wel bekend als Golden Phoenix"
         },
         {
@@ -317,7 +317,7 @@
           "grossWeight": "2.950",
           "burningTime": "40",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/blackice.webp",
           "description": "Black ice, ook wel bekend als Interceptor"
         },
         {
@@ -333,7 +333,7 @@
           "grossWeight": "3.120",
           "burningTime": "65",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/spotlight.jpg",
           "description": ""
         },
         {
@@ -349,7 +349,7 @@
           "grossWeight": "2.520",
           "burningTime": "110",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/stardust.jpg",
           "description": "StarDust, ook wel bekend als Imperial"
         },
         {
@@ -365,7 +365,7 @@
           "grossWeight": "",
           "burningTime": "60",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/finalcountdown.webp",
           "description": ""
         },
         {
@@ -381,7 +381,7 @@
           "grossWeight": "",
           "burningTime": "120",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/queenofthenight.jpg",
           "description": ""
         },
         {
@@ -397,7 +397,7 @@
           "grossWeight": "2.450",
           "burningTime": "120",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/casinoroyal.jpg",
           "description": "Casino Royale, ook wel bekend als Dicke Berta"
         },
         {
@@ -413,7 +413,7 @@
           "grossWeight": "4.346",
           "burningTime": "50",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/highlander.png",
           "description": "HighLander, ook wel bekend als Rowdy"
         },
         {
@@ -429,7 +429,7 @@
           "grossWeight": "4",
           "burningTime": "50",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/unforgettable.jpg",
           "description": "Unforgettable, ook wel bekend als No Limits"
         },
         {
@@ -445,7 +445,7 @@
           "grossWeight": "3.550",
           "burningTime": "90",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/perfectillusion.jpg",
           "description": "Perfect illusion, ook wel bekend als Interstellar"
         },
         {
@@ -461,7 +461,7 @@
           "grossWeight": "3.6",
           "burningTime": "85",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/showmaster.jpg",
           "description": "Showmaster, ook wel bekend als Midnight Madness"
         },
         {
@@ -477,7 +477,7 @@
           "grossWeight": "6.750",
           "burningTime": "85",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/survivor.jpg",
           "description": "Survivor, ook wel bekend als Dynasty"
         },
         {
@@ -493,7 +493,7 @@
           "grossWeight": "9.250",
           "burningTime": "115",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/ghostcatchers.jpg",
           "description": "Ghost Catchers, ook wel bekend als Thunderstruck"
         },
         {
@@ -509,7 +509,7 @@
           "grossWeight": "",
           "burningTime": "115",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/timemachine.webp",
           "description": ""
         },
         {
@@ -525,7 +525,7 @@
           "grossWeight": "12.265",
           "burningTime": "85",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/puremagic.jpg",
           "description": "Pure magic, ook wel bekend als Grand Slam"
         },
         {
@@ -541,7 +541,7 @@
           "grossWeight": "12.395",
           "burningTime": "",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/mastermind.webp",
           "description": "Mastermind, ook wel bekend als Podium"
         },
         {
@@ -557,7 +557,7 @@
           "grossWeight": "",
           "burningTime": "",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/firedome.webp",
           "description": ""
         },
         {
@@ -573,7 +573,7 @@
           "grossWeight": "13.227",
           "burningTime": "100",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/colossus.webp",
           "description": "Colossus, ook wel bekend als Madhouse"
         },
         {
@@ -589,7 +589,7 @@
           "grossWeight": "13.950",
           "burningTime": "70",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/thunderstroke.webp",
           "description": "Thunder Stroke, ook wel bekend als Beatmania"
         },
         {
@@ -605,7 +605,7 @@
           "grossWeight": "16.785",
           "burningTime": "75",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/newuniverse.webp",
           "description": "New Universe, ook wel bekend als Championship"
         },
         {
@@ -621,7 +621,7 @@
           "grossWeight": "14.2",
           "burningTime": "260",
           "ytUrl": "",
-          "image": "",
+          "image": "../../../assets/images/lidl2022/legend.webp",
           "description": "Legend, ook wel bekend als Pyro Concept 304"
         }
   ],

@@ -11,6 +11,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SafePipe } from './pipes/safe.pipe';
 import { FireworkCardComponent } from './components/firework-card/firework-card.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,9 @@ import { HttpClientModule } from '@angular/common/http';
     ]),
     NgbModule
   ],
-  providers: [],
+  providers: [
+    { provide: LocationStrategy, useClass: PathLocationStrategy }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
